@@ -13,9 +13,9 @@ A Semantic Search Engine, written in Java programing language, developed with th
 ---
 ## Introduction
 
-To read a small introduction, please read the [introducary report](https://github.com/Nemat-Allah-Aloush/Semantic-Search-Engine/blob/main/Introductory%20Report.pdf)
+To read a small introduction, please read the [introducary report](https://github.com/nemat-al/Semantic-Search-Engine/blob/main/Introductory%20Report.pdf)
 
-The purpose of the project is to develop a semantic search engine in the English language, the search is done within a set of news from the .bbc station, represented in an xml file, that can be found [here](https://github.com/Nemat-Allah-Aloush/Semantic-Search-Engine/blob/main/bbc_rss_feed.xml).
+The purpose of the project is to develop a semantic search engine in the English language, the search is done within a set of news from the .bbc station, represented in an xml file, that can be found [here](https://github.com/nemat-al/Semantic-Search-Engine/blob/main/bbc_rss_feed.xml).
 
 In order to achieve semantic research, semantic linguistic processing is carried out either on documents or on the query, and since the query is smaller, the semantic analysis is applied on it. 
 
@@ -30,12 +30,12 @@ In order to run the project in a local device, you can download the project and 
 3. [Satndford CoreNlp](https://stanfordnlp.github.io/CoreNLP/download.html).
 4. [WordNet](https://wordnet.princeton.edu/download/current-version).
 
-The jar files should be located in the [Jar folder](https://github.com/Nemat-Allah-Aloush/Semantic-Search-Engine/tree/main/Jar).
+The jar files should be located in the [Jar folder](https://github.com/nemat-al/Semantic-Search-Engine/tree/main/Jar).
 
 --- 
 ## Semantic Search Engine Steps
  In the following picture we can see the structure of the developed search engine.
-![alt text](https://github.com/Nemat-Allah-Aloush/Semantic-Search-Engine/blob/main/images/SSE%20structure.png "Semantic Search Engine Steps")
+![alt text](https://github.com/nemat-al/Semantic-Search-Engine/blob/main/images/SSE%20structure.png "Semantic Search Engine Steps")
 
 We can summarize the steps in three titles:
 1. [Documents processing](#document-processing).
@@ -43,7 +43,7 @@ We can summarize the steps in three titles:
 3. [Searching and showing the results](#searching-and-showing-the-results).
 
 ### Documents processing
-The first step is to read the data from the [XML data file](https://github.com/Nemat-Allah-Aloush/Semantic-Search-Engine/blob/main/bbc_rss_feed.xml), and then parse it using the defined `RssFeedParser` class.
+The first step is to read the data from the [XML data file](https://github.com/nemat-al/Semantic-Search-Engine/blob/main/bbc_rss_feed.xml), and then parse it using the defined `RssFeedParser` class.
 
 Then the parsed documents will be analyzed in the defined `DocumentAnalyzer` class. By using Standford CoreNlp functions, both the title and the content of each document are splitted to sentences. Then each sentence is splitted into tokens. Then the stop words are removed. Finally, for each token its lemma is found.
 
